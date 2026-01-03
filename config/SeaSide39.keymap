@@ -45,10 +45,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W           &kp E             &kp R                &kp T                                                                           &kp Y        &kp U              &lt 5 I            &kp O            &mt RIGHT_WIN P
-&mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_SHIFT F     &kp G                                                                           &kp H        &mt RIGHT_SHIFT J  &mt K RIGHT_SHIFT  &mt RIGHT_ALT L  &mt RIGHT_CONTROL MINUS
-&mt LEFT_CONTROL Z  &kp X           &kp C             &kp V                &kp B                                                                           &kp N        &kp M              &kp LESS_THAN      &kp PERIOD       &mt RIGHT_CONTROL SLASH
-&kp DELETE          &kp LEFT_WIN    &kp LEFT_ALT      &mt CAPS LEFT_SHIFT  &lt 1 SPACE  &lt 3 INT_KATAKANAHIRAGANA      &mt LANG_ZENKAKUHANKAKU BACKSPACE  &lt 2 ENTER                                                         &kp NON_US_BACKSLASH
+&kp Q               &kp W           &kp E             &kp R                &kp T                                                         &kp Y        &kp U              &lt 5 I            &kp O            &mt RIGHT_WIN P
+&mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_SHIFT F     &kp G                                                         &kp H        &mt RIGHT_SHIFT J  &mt K RIGHT_SHIFT  &mt RIGHT_ALT L  &mt RIGHT_CONTROL MINUS
+&mt LEFT_CONTROL Z  &kp X           &kp C             &kp V                &kp B                                                         &kp N        &kp M              &kp LESS_THAN      &kp PERIOD       &mt RIGHT_CONTROL SLASH
+&kp DELETE          &kp LEFT_WIN    &kp LEFT_ALT      &mt CAPS LEFT_SHIFT  &lt 1 SPACE  &lt 3 INT_KATAKANAHIRAGANA      &lt 4 BACKSPACE  &lt 2 ENTER                                                         &kp NON_US_BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -85,10 +85,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans        &trans        &trans        &trans        &trans                            &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans                            &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans                          &trans
             >;
         };
 
