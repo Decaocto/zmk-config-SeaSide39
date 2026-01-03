@@ -56,7 +56,7 @@
 &kp Q               &kp W           &kp E             &kp R                &kp T                                                         &kp Y        &kp U              &lt 0 I            &kp O            &mt RIGHT_WIN P
 &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_SHIFT F     &kp G                                                         &kp H        &mt RIGHT_SHIFT J  &mt K RIGHT_SHIFT  &mt RIGHT_ALT L  &mt RIGHT_CONTROL MINUS
 &mt LEFT_CONTROL Z  &kp X           &kp C             &kp V                &kp B                                                         &kp N        &kp M              &kp COMMA          &kp PERIOD       &mt RIGHT_CONTROL SLASH
-&kp DELETE          &kp LEFT_WIN    &kp LEFT_ALT      &mt LEFT_SHIFT CAPS  &lt 1 SPACE  &lt 3 INT_KATAKANAHIRAGANA      &lt 4 BACKSPACE  &lt 2 ENTER                                                         &kp CARET
+&kp DELETE          &kp LEFT_WIN    &kp LEFT_ALT      &mt LEFT_SHIFT CAPS  &lt 1 SPACE  &lt 3 INT_KATAKANAHIRAGANA      &lt 4 BACKSPACE  &lt 2 ENTER                                                         &kp JP_YEN
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
