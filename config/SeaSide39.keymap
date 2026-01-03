@@ -72,10 +72,10 @@
 
         NUM {
             bindings = <
-&kp ESCAPE                 &kp N7        &kp N8                   &kp N9                   &kp F12                      &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp PLUS         &kp MINUS
-&mt LEFT_CONTROL TAB       &kp NUMBER_4  &mt LEFT_SHIFT NUMBER_5  &mt LEFT_SHIFT NUMBER_6  &kp F8                       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK     &kp SLASH
-&mt LEFT_CONTROL ASTERISK  &kp NUMBER_1  &kp NUMBER_2             &kp NUMBER_3             &kp F4                       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACE  &kp COLON
-&kp SLASH                  &kp NUMBER_0  &number_00               &trans                   &trans   &trans      &trans  &kp NUMBER_0                                               &kp PERIOD
+&kp ESCAPE                 &kp N7        &kp N8                   &kp N9                   &kp MINUS                      &kp CARET     &kp TILDE              &kp LESS_THAN             &kp GREATER_THAN  &kp MINUS
+&mt LEFT_CONTROL TAB       &kp NUMBER_4  &mt LEFT_SHIFT NUMBER_5  &mt LEFT_SHIFT NUMBER_6  &kp PLUS                       &kp ASTERISK  &mt RIGHT_SHIFT COLON  &mt RIGHT_SHIFT UP_ARROW  &kp SEMICOLON     &kp RIGHT_CONTROL
+&mt LEFT_CONTROL ASTERISK  &kp NUMBER_1  &kp NUMBER_2             &kp NUMBER_3             &kp EQUAL                      &kp AT_SIGN   &kp LEFT_ARROW         &kp DOWN_ARROW            &kp RIGHT_ARROW   &kp RIGHT_CONTROL
+&kp SLASH                  &kp NUMBER_0  &number_00               &trans                   &trans     &trans      &trans  &trans                                                                           &trans
             >;
         };
 
