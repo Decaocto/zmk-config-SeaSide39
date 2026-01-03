@@ -55,7 +55,7 @@
 &kp Q               &kp W           &kp E             &kp R                &kp T                                                         &kp Y        &kp U              &lt 0 I            &kp O            &mt RIGHT_WIN P
 &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_SHIFT F     &kp G                                                         &kp H        &mt RIGHT_SHIFT J  &mt K RIGHT_SHIFT  &mt RIGHT_ALT L  &mt RIGHT_CONTROL MINUS
 &mt LEFT_CONTROL Z  &kp X           &kp C             &kp V                &kp B                                                         &kp N        &kp M              &kp LESS_THAN      &kp PERIOD       &mt RIGHT_CONTROL SLASH
-&kp DELETE          &kp LEFT_WIN    &kp LEFT_ALT      &mt CAPS LEFT_SHIFT  &lt 1 SPACE  &lt 3 INT_KATAKANAHIRAGANA      &lt 4 BACKSPACE  &lt 2 ENTER                                                         &kp NON_US_BACKSLASH
+&kp DELETE          &kp LEFT_WIN    &kp LEFT_ALT      &mt LEFT_SHIFT CAPS  &lt 1 SPACE  &lt 3 INT_KATAKANAHIRAGANA      &lt 4 BACKSPACE  &lt 2 ENTER                                                         &kp BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -63,19 +63,19 @@
 
         SYMBOL-MOUSE {
             bindings = <
-&kp ESCAPE            &kp LEFT_ALT    &kp LEFT_CONTROL             &kp LEFT_SHIFT                &kp AT_SIGN                            &kp RC(LEFT_BRACKET)   &kp PAGE_UP     &mkp MB3      &kp PAGE_DOWN    &kp TAB
-&mt LEFT_CONTROL TAB  &kp UNDERSCORE  &mt LEFT_SHIFT LEFT_BRACKET  &mt LEFT_SHIFT RIGHT_BRACKET  &kp LS(LESS_THAN)                      &kp RC(RIGHT_BRACKET)  &mkp MB1        &kp UP_ARROW  &mkp MB2         &mt RIGHT_CONTROL PRINTSCREEN
-&kp LEFT_CONTROL      &kp MINUS       &kp LEFT_BRACE               &kp RIGHT_BRACE               &kp LS(LC(F2))                         &kp RS(RC(AT_SIGN))    &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp RIGHT_CONTROL
-&trans                &trans          &trans                       &trans                        &trans             &trans      &trans  &trans                                                                &trans
+&kp ESCAPE            &kp LEFT_ALT   &kp LEFT_CONTROL              &kp LEFT_SHIFT            &kp LEFT_BRACKET                       &kp RC(RIGHT_BRACKET)     &kp PAGE_UP     &mkp MB3      &kp PAGE_DOWN    &kp TAB
+&mt LEFT_CONTROL TAB  &kp LS(MINUS)  &mt LEFT_SHIFT RIGHT_BRACKET  &mt LEFT_SHIFT BACKSLASH  &kp LS(LESS_THAN)                      &kp RC(BACKSLASH)         &mkp MB1        &kp UP_ARROW  &mkp MB2         &mt RIGHT_CONTROL PRINTSCREEN
+&kp LEFT_CONTROL      &kp MINUS      &kp LEFT_BRACE                &kp RIGHT_BRACE           &kp LS(LC(F2))                         &kp RS(RC(LEFT_BRACKET))  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp RIGHT_CONTROL
+&trans                &trans         &trans                        &trans                    &trans             &trans      &trans  &trans                                                                   &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp ESCAPE                 &kp N7        &kp N8                   &kp N9                   &kp MINUS                      &kp CARET     &kp TILDE              &kp LESS_THAN             &kp GREATER_THAN  &kp MINUS
-&mt LEFT_CONTROL TAB       &kp NUMBER_4  &mt LEFT_SHIFT NUMBER_5  &mt LEFT_SHIFT NUMBER_6  &kp PLUS                       &kp ASTERISK  &mt RIGHT_SHIFT COLON  &mt RIGHT_SHIFT UP_ARROW  &kp SEMICOLON     &kp RIGHT_CONTROL
-&mt LEFT_CONTROL ASTERISK  &kp NUMBER_1  &kp NUMBER_2             &kp NUMBER_3             &kp EQUAL                      &kp AT_SIGN   &kp LEFT_ARROW         &kp DOWN_ARROW            &kp RIGHT_ARROW   &kp RIGHT_CONTROL
-&kp SLASH                  &kp NUMBER_0  &number_00               &trans                   &trans     &trans      &trans  &trans                                                                           &trans
+&kp ESCAPE                 &kp N7        &kp N8                   &kp N9                   &kp MINUS                              &kp EQUAL         &kp LS(EQUAL)                 &kp LESS_THAN             &kp GREATER_THAN  &kp MINUS
+&mt LEFT_CONTROL TAB       &kp NUMBER_4  &mt LEFT_SHIFT NUMBER_5  &mt LEFT_SHIFT NUMBER_6  &kp COLON                              &kp KP_ASTERISK   &mt RIGHT_SHIFT SINGLE_QUOTE  &mt RIGHT_SHIFT UP_ARROW  &kp SEMICOLON     &kp RIGHT_CONTROL
+&mt LEFT_CONTROL ASTERISK  &kp NUMBER_1  &kp NUMBER_2             &kp NUMBER_3             &kp LS(BACKSLASH)                      &kp LEFT_BRACKET  &kp LEFT_ARROW                &kp DOWN_ARROW            &kp RIGHT_ARROW   &kp RIGHT_CONTROL
+&kp SLASH                  &kp NUMBER_0  &number_00               &trans                   &trans             &trans      &trans  &trans                                                                                      &trans
             >;
         };
 
