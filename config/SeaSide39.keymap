@@ -54,12 +54,12 @@
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        SYMBOL {
+        SYMBOL-MOUSE {
             bindings = <
-&kp PRCNT  &kp DOLLAR  &kp AMPERSAND  &kp CARET        &kp FSLH                             &kp BSLH        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN
-&kp AT     &kp HASH    &kp ASTERISK   &kp PLUS         &kp EQUAL                            &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI       &kp COLON
-&kp GRAVE  &kp TILDE   &kp MINUS      &kp EXCLAMATION  &kp QUESTION                         &kp PIPE        &kp LBKT              &kp RBKT               &kp SQT        &kp DOUBLE_QUOTES
-&trans     &trans      &trans         &trans           &trans        &trans      &kp COMMA  &kp PERIOD                                                                  &kp ESC
+&kp ESCAPE            &kp LEFT_ALT    &kp LEFT_CONTROL             &kp LEFT_SHIFT                &kp AT_SIGN                            &kp RC(LEFT_BRACKET)   &kp PAGE_UP     &mkp MB3      &kp PAGE_DOWN    &kp TAB
+&mt LEFT_CONTROL TAB  &kp UNDERSCORE  &mt LEFT_SHIFT LEFT_BRACKET  &mt LEFT_SHIFT RIGHT_BRACKET  &kp LS(LESS_THAN)                      &kp RC(RIGHT_BRACKET)  &mkp MB1        &kp UP_ARROW  &mkp MB2         &mt RIGHT_CONTROL PRINTSCREEN
+&kp LEFT_CONTROL      &kp MINUS       &kp LEFT_BRACE               &kp RIGHT_BRACE               &kp LS(LC(F2))                         &kp RS(RC(AT_SIGN))    &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp RIGHT_CONTROL
+&trans                &trans          &trans                       &trans                        &trans             &trans      &trans  &trans                                                                &trans
             >;
         };
 
