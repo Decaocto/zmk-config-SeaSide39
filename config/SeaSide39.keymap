@@ -56,18 +56,16 @@
 &kp Q               &kp W           &kp E             &kp R                &kp T                                                         &kp Y        &kp U              &lt 0 I            &kp O            &mt RIGHT_WIN P
 &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_SHIFT F     &kp G                                                         &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL MINUS
 &mt LEFT_CONTROL Z  &kp X           &kp C             &kp V                &kp B                                                         &kp N        &kp M              &kp COMMA          &kp PERIOD       &mt RIGHT_CONTROL SLASH
-&kp DELETE          &kp LEFT_WIN    &kp LEFT_ALT      &mt LEFT_SHIFT CAPS  &lt 1 SPACE  &lt 3 INT_KATAKANAHIRAGANA      &lt 4 BACKSPACE  &lt 2 ENTER                                                         &kp JP_YEN
-        
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+&kp DELETE          &kp LEFT_WIN    &kp LEFT_ALT      &mt LEFT_SHIFT CAPS  &lt 1 SPACE  &lt 3 INT_KATAKANAHIRAGANA      &lt 4 BACKSPACE  &lt 2 ENTER                                                         &kp JP_YEN sensor
+            >;
         };
 
         SYMBOL-MOUSE {
             bindings = <
-&kp ESCAPE            &kp LEFT_ALT  &kp LEFT_CONTROL              &kp LEFT_SHIFT            &kp LEFT_BRACKET                       &kp RC(RIGHT_BRACKET)     &kp PAGE_UP     &mkp MB3      &kp PAGE_DOWN    &kp TAB
-&mt LEFT_CONTROL TAB  &kp JP_UNDERSCORE     &mt LEFT_SHIFT RIGHT_BRACKET  &mt LEFT_SHIFT BACKSLASH  &kp LS(LESS_THAN)                      &kp RC(BACKSLASH)         &mkp MB1        &kp UP_ARROW  &mkp MB2         &mt RIGHT_CONTROL PRINTSCREEN
-&kp LEFT_CONTROL      &kp MINUS     &kp LS(RIGHT_BRACKET)         &kp LS(BACKSLASH)         &kp LS(LC(F2))                         &kp RS(RC(LEFT_BRACKET))  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp RIGHT_CONTROL
-&trans                &trans        &trans                        &trans                    &trans             &trans      &trans  &trans                                                                   &trans
+&kp ESCAPE            &kp LEFT_ALT       &kp LEFT_CONTROL              &kp LEFT_SHIFT            &kp LEFT_BRACKET                       &kp RC(RIGHT_BRACKET)     &kp PAGE_UP     &mkp MB3      &kp PAGE_DOWN    &kp TAB
+&mt LEFT_CONTROL TAB  &kp JP_UNDERSCORE  &mt LEFT_SHIFT RIGHT_BRACKET  &mt LEFT_SHIFT BACKSLASH  &kp LS(LESS_THAN)                      &kp RC(BACKSLASH)         &mkp MB1        &kp UP_ARROW  &mkp MB2         &mt RIGHT_CONTROL PRINTSCREEN
+&kp LEFT_CONTROL      &kp MINUS          &kp LS(RIGHT_BRACKET)         &kp LS(BACKSLASH)         &kp LS(LC(F2))                         &kp RS(RC(LEFT_BRACKET))  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp RIGHT_CONTROL
+&trans                &trans             &trans                        &trans                    &trans             &trans      &trans  &trans                                                                   &trans
             >;
         };
 
@@ -93,7 +91,7 @@
 
         BLUETOOTH {
             bindings = <
-&none         &trans        &trans        &trans        &trans                            &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans                            &trans  &trans  &trans  &trans  &trans
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &trans  &trans  &trans  &trans  &trans
 &trans        &trans        &trans        &trans        &trans                            &trans  &trans  &trans  &trans  &trans
 &trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans                          &trans
