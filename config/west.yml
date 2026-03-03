@@ -9,12 +9,12 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main  # 最新のZMK Studio対応版を使用
+      revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: inorichi
-      # ここを zmk-v0.3 にすることで、Pillbugボードの衝突エラーを回避します
-      revision: zmk-v0.3
+      # Pillbugボードの衝突を避けるため、ボード定義が追加される前のコミットを指定します
+      revision: 139e8664a78368940866509f6b643a0595304325
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
