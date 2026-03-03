@@ -9,13 +9,14 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main  # v0.3からmainに変更。Studio機能の最新バグ修正を反映させるため。
+      # main ではなく、ZMK Studioが安定している時点のハッシュ(コミットID)を指定します
+      revision: 49455112f6055041007c0303e40be56997459f77 
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: inorichi
       revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
-      revision: main  # Caksoylar氏のmainブランチは既にStudio対応済みです。
+      revision: main
   self:
     path: config
