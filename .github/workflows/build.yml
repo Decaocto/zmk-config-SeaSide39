@@ -2,4 +2,5 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
+    # 最新のZMK Studioビルド環境（main）を直接呼び出します
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
