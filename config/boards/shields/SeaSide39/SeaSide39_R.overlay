@@ -54,19 +54,14 @@
     cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
 
     trackball: trackball@0 {
-        status = "okay";
-        compatible = "pixart,pmw3610";
-        reg = <0>;
-        spi-max-frequency = <2000000>;
-        motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        zephyr,axis-x = <INPUT_REL_X>;    // ← 追加（必須）
-        zephyr,axis-y = <INPUT_REL_Y>;    // ← 追加（必須）
-        // automouse-layer = <4>;
-        // scroll-layers はここから削除
-    };
-};
-
-/* nRF52840 NFC ピンを GPIO として使用 */
-&uicr {
-    nfct-pins-as-gpios;               // ← 追加（gpio0 pin 2 使用のため必須）
+    status = "okay";
+    compatible = "pixart,pmw3610";
+    reg = <0>;
+    spi-max-frequency = <2000000>;
+    motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    zephyr,axis-x = <INPUT_REL_X>;
+    zephyr,axis-y = <INPUT_REL_Y>;
+    res-cpi = <650>;     // ← 旧 CONFIG_PMW3610_CPI=650
+    smart-mode;          // ← 旧 CONFIG_PMW3610_SMART_ALGORITHM=y
+    invert-y;            // ← 旧 ORIENTATION_180 + INVERT_X=n の組み合わせ結果
 };
