@@ -1,30 +1,5 @@
-name: Build
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: West Init
-        run: west init -l config
-
-      - name: West Update
-        run: west update
-
-      - name: West Zephyr export
-        run: west zephyr-export
-
-      # トラックボールドライバ側の基板定義（Pillbug等）が本体と衝突するので削除します
-      - name: Remove conflicting board folder
-        run: rm -rf zmk-pmw3610-driver/boards
-
-      - name: Build ZMK
-        uses: zmkfirmware/zmk-build-action@v2  # ← ここに @v2 を付け直しました
-        with:
-          config_path: config
-          build_matrix_path: build.yaml
-          repository: zmkfirmware/zmk
-          branch: main
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
