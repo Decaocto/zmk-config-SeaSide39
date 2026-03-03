@@ -17,15 +17,14 @@ jobs:
       - name: West Zephyr export
         run: west zephyr-export
 
-      # === ここで「Pillbug重複エラー」の元凶を削除します ===
+      # トラックボールドライバ側の基板定義（Pillbug等）が本体と衝突するので削除します
       - name: Remove conflicting board folder
         run: rm -rf zmk-pmw3610-driver/boards
 
       - name: Build ZMK
-        uses: zmkfirmware/zmk-build-action@v2
+        uses: zmkfirmware/zmk-build-action@v2  # ← ここに @v2 を付け直しました
         with:
           config_path: config
           build_matrix_path: build.yaml
-          # ZMK Studioを有効にするために最新のZMK本体を使用
           repository: zmkfirmware/zmk
           branch: main
