@@ -9,13 +9,13 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3
+      revision: main  # v0.3からmainに変更。Studio機能の最新バグ修正を反映させるため。
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: inorichi
       revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
-      revision: main
+      revision: main  # Caksoylar氏のmainブランチは既にStudio対応済みです。
   self:
     path: config
