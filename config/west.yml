@@ -2,21 +2,19 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: inorichi
-      url-base: https://github.com/inorichi
+    - name: badumbatish
+      url-base: https://github.com/badumbatish
     - name: caksoylar
       url-base: https://github.com/caksoylar
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      # Pete氏のブランチの中から、ボード定義が「完全に排除された」特定の枝を指定します
-      remote: petejohanson
-      revision: feat/module-only
+      # 基板定義の衝突を防ぐため、専用に整備されたリポジトリを使用します
+      remote: badumbatish
+      revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
