@@ -63,7 +63,7 @@
         SYMBOL-MOUSE {
             bindings = <
 &kp ESCAPE            &kp LEFT_ALT       &kp LEFT_CONTROL              &kp LEFT_SHIFT            &kp LEFT_BRACKET                       &kp RC(RIGHT_BRACKET)     &kp PAGE_UP     &mkp MB3      &kp PAGE_DOWN    &kp TAB
-&mt LEFT_CONTROL TAB  &kp JP_UNDERSCORE  &mt LEFT_SHIFT RIGHT_BRACKET  &mt LEFT_SHIFT BACKSLASH  &kp LS(LESS_THAN)                      &kp RC(BACKSLASH)         &mkp MB1        &kp UP_ARROW  &mkp MB2         &mt RIGHT_CONTROL PRINTSCREEN
+&mt LEFT_CONTROL TAB  &kp JP_UNDERSCORE  &mt LEFT_SHIFT RIGHT_BRACKET  &mt LEFT_SHIFT BACKSLASH  &kp LS(LESS_THAN)                      &kp RC(BACKSLASH)         &mkp MB1        &kp UP_ARROW  &mkp MB2         &kp RIGHT_CONTROL
 &kp LEFT_CONTROL      &kp MINUS          &kp LS(RIGHT_BRACKET)         &kp LS(BACKSLASH)         &kp LS(LC(F2))                         &kp RS(RC(LEFT_BRACKET))  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp RIGHT_CONTROL
 &trans                &trans             &trans                        &trans                    &trans             &trans      &trans  &trans                                                                   &trans
             >;
@@ -80,10 +80,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE          &kp F7   &kp F8       &kp F9  &kp F10                             &kp LG(LC(SPACE))      &none                   &kp LG(UP_ARROW)    &none                    &kp RIGHT_WIN
-&mt LEFT_SHIFT TAB  &kp F4   &kp F5       &kp F6  &kp F11                             &kp LC(RIGHT_WIN)      &kp LG(LEFT_ARROW)      &kp RIGHT_ALT       &kp LG(RIGHT_ARROW)      &kp RIGHT_SHIFT
-&kp LEFT_CONTROL    &kp F1   &kp F2       &kp F3  &kp F12                             &kp LG(LC(RIGHT_ALT))  &kp LG(LS(LEFT_ARROW))  &kp LG(DOWN_ARROW)  &kp LS(LG(RIGHT_ARROW))  &kp RIGHT_CONTROL
-&kp HOME            &kp END  &kp C_PAUSE  &trans  &trans   &trans      &kp RIGHT_ALT  &mt RIGHT_SHIFT ENTER                                                                       &trans
+&kp ESCAPE            &kp F7   &kp F8       &kp F9  &kp F10                             &kp LG(LC(SPACE))      &none                   &kp LG(UP_ARROW)    &none                    &kp RIGHT_WIN
+&mt LEFT_CONTROL TAB  &kp F4   &kp F5       &kp F6  &kp F11                             &kp LC(RIGHT_WIN)      &kp LG(LEFT_ARROW)      &kp RIGHT_ALT       &kp LG(RIGHT_ARROW)      &kp RIGHT_CONTROL
+&kp LEFT_SHIFT        &kp F1   &kp F2       &kp F3  &kp F12                             &kp LG(LC(RIGHT_ALT))  &kp LG(LS(LEFT_ARROW))  &kp LG(DOWN_ARROW)  &kp LS(LG(RIGHT_ARROW))  &kp RIGHT_SHIFT
+&kp HOME              &kp END  &kp C_PAUSE  &trans  &trans   &trans      &kp RIGHT_ALT  &mt RIGHT_SHIFT ENTER                                                                       &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
