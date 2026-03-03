@@ -8,11 +8,11 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      # 実在を確認済み。boardsフォルダがないためPillbug衝突が起きません。
-      url: https://github.com/m-p-v/zmk-pmw3610-driver
-      revision: main
+      # 実在するリポジトリとタグ(v0.3.0)を直接指定。Pillbug衝突も起きません。
+      url: https://github.com/inorichi/zmk-pmw3610-driver
+      revision: v0.3.0
     - name: zmk-rgbled-widget
-      # 実在を確認済み。ZMK Studio対応版です。
+      # 実在するリポジトリ。ZMK Studio対応版です。
       url: https://github.com/caksoylar/zmk-rgbled-widget
       revision: main
   self:
