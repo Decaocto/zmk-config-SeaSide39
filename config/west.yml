@@ -6,15 +6,17 @@ manifest:
       url-base: https://github.com/inorichi
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: inorichi
-      # Pillbugボードの衝突を避けるため、ボード定義が追加される前のコミットを指定します
-      revision: 139e8664a78368940866509f6b643a0595304325
+      # 衝突を避けるため、ボード定義を含まないPete氏のドライバを使用します
+      remote: petejohanson
+      revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
