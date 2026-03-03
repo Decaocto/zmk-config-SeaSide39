@@ -2,21 +2,18 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-pmw3610
-      # リポジトリ名から -driver を削除しました。これで404/認証エラーが消えます。
-      remote: petejohanson
+    - name: zmk-pmw3610-driver
+      # 実在を確認済み。boardsフォルダがないためPillbug衝突が起きません。
+      url: https://github.com/m-p-v/zmk-pmw3610-driver
       revision: main
     - name: zmk-rgbled-widget
-      remote: caksoylar
+      # 実在を確認済み。ZMK Studio対応版です。
+      url: https://github.com/caksoylar/zmk-rgbled-widget
       revision: main
   self:
     path: config
