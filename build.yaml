@@ -18,11 +18,11 @@
 #
 ---
 include:
-  - board: xiao_ble/nrf52840/zmk     # ← /nrf52840/zmk を追加
-    shield: SeaSide39_R rgbled_adapter
+  - board: xiao_ble/nrf52840/zmk
+    shield: SeaSide39_R          # ← rgbled_adapter を削除
     snippet: studio-rpc-usb-uart
-  - board: xiao_ble/nrf52840/zmk     # ← /nrf52840/zmk を追加
-    shield: SeaSide39_L rgbled_adapter
+  - board: xiao_ble/nrf52840/zmk
+    shield: SeaSide39_L          # ← rgbled_adapter を削除
     snippet: studio-rpc-usb-uart
-  - board: xiao_ble/nrf52840/zmk     # ← /nrf52840/zmk を追加
+  - board: xiao_ble/nrf52840/zmk
     shield: settings_reset
