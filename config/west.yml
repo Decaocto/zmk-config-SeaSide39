@@ -7,10 +7,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-pmw3610-driver
-      # あなたがたった今作成した、確実に見つかるフォーク（コピー）を指定します！
-      url: https://github.com/Decaocto/zmk-pmw3610-driver
-      revision: main
+    # zmk-pmw3610-driver のブロックを丸ごと削除しました
     - name: zmk-rgbled-widget
       url: https://github.com/caksoylar/zmk-rgbled-widget
       revision: main
