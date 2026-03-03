@@ -6,14 +6,17 @@ manifest:
       url-base: https://github.com/inorichi
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: inorichi
-      revision: main
+      # Pete氏のブランチの中から、ボード定義が「完全に排除された」特定の枝を指定します
+      remote: petejohanson
+      revision: feat/module-only
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
