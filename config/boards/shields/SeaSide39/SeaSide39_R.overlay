@@ -1,4 +1,5 @@
 #include "SeaSide39.dtsi"
+#include <input/processors.dtsi>
 
 /* ---- 追加: xiao_ble_zmk.overlay の壊れたモジュールの代替 ---- */
 / {
@@ -38,12 +39,16 @@
         ;
 };
 
-/* Trackball のリスナー */
+/* Trackball のリスナー（レイヤー3の時だけスクロール動作にする） */
 / {
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        scroll-layers = <3>;    // ← trackball@0 から ここへ移動
+
+        scroller {
+            layers = <3>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+        };
     };
 };
 
