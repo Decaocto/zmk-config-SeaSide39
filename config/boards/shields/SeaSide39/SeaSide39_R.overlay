@@ -1,34 +1,8 @@
 #include "SeaSide39.dtsi"
-#include <input/processors.dtsi>
-
-/* ---- 追加: xiao_ble_zmk.overlay の壊れたモジュールの代替 ---- */
-/ {
-    aliases {
-        led-red = &led0;
-        led-green = &led1;
-        led-blue = &led2;
-    };
-
-    leds {
-        compatible = "gpio-leds";
-        status = "okay";
-        led0: led_0 {
-            gpios = <&gpio0 26 GPIO_ACTIVE_LOW>;
-        };
-        led1: led_1 {
-            gpios = <&gpio0 30 GPIO_ACTIVE_LOW>;
-        };
-        led2: led_2 {
-            gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
-        };
-    };
-};
-/* ---- 追加ここまで ---- */
 
 &default_transform {
     col-offset = <6>;
 };
-
 &kscan0 {
     col-gpios
         = <&xiao_d 10 GPIO_ACTIVE_HIGH>
@@ -37,19 +11,6 @@
         , <&xiao_d 7 GPIO_ACTIVE_HIGH>
         , <&gpio0 10 GPIO_ACTIVE_HIGH>
         ;
-};
-
-/* Trackball のリスナー（レイヤー3の時だけスクロール動作にする） */
-/ {
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-
-        scroller {
-            layers = <3>;
-            input-processors = <&zip_xy_to_scroll_mapper>;
-        };
-    };
 };
 
 /* SPI 設定 */
@@ -70,7 +31,6 @@
         };
     };
 };
-
 &xiao_serial { status = "disabled"; };
 
 /* SPI デバイス (トラックボール) */
@@ -83,15 +43,11 @@
     cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
 
     trackball: trackball@0 {
-    status = "okay";
-    compatible = "pixart,pmw3610";
-    reg = <0>;
-    spi-max-frequency = <2000000>;
-    motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-    zephyr,axis-x = <INPUT_REL_X>;
-    zephyr,axis-y = <INPUT_REL_Y>;
-    res-cpi = <650>;     // ← 旧 CONFIG_PMW3610_CPI=650
-    smart-mode;          // ← 旧 CONFIG_PMW3610_SMART_ALGORITHM=y
-    invert-y;            // ← 旧 ORIENTATION_180 + INVERT_X=n の組み合わせ結果
-};
+        status = "okay";
+        compatible = "pixart,pmw3610";
+        reg = <0>;
+        spi-max-frequency = <2000000>;
+        irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        scroll-layers = <3>;
+    };
 };
