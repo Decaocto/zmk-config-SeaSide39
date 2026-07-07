@@ -13,6 +13,14 @@
         ;
 };
 
+/* Trackball のリスナー */
+/ {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+    };
+};
+
 /* SPI 設定 */
 &pinctrl {
     spi0_default: spi0_default {
