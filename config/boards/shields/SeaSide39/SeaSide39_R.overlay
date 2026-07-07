@@ -89,3 +89,4 @@
     smart-mode;          // ← 旧 CONFIG_PMW3610_SMART_ALGORITHM=y
     invert-y;            // ← 旧 ORIENTATION_180 + INVERT_X=n の組み合わせ結果
 };
+};
